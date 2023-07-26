@@ -56,12 +56,14 @@ function Header({ placeholder }) {
         onClick={() => router.push("/")}
         className="relative flex items-center h-10 my-auto cursor-pointer"
       >
-        {/* <Image
-          src="https://links.papareact.com/qd3"
-          layout="fill"
+        <Image
+          src="/logo2.png"
+          height={85}
+          width={85}
+          // layout="fill"
           objectFit="contain"
           objectPosition="left"
-        /> */}
+        />
       </div>
       <div className="flex items-center md:border-2 rounded-full md:shadow-sm py-2">
         <input
@@ -71,7 +73,7 @@ function Header({ placeholder }) {
           placeholder={placeholder || "Start your Search"}
           className="flex-grow text-sm text-gray-600 pl-5 placeholder-gray-400 outline-none bg-transparent"
         />
-        <SearchIcon className="h-8 hidden md:inline-flex p-2 mx-auto cursor-pointer md:mx-2 bg-red-400 rounded-full text-white" />
+        <SearchIcon className="h-8 hidden md:inline-flex p-2 mx-auto cursor-pointer md:mx-2 bg-blue-500 rounded-full text-white" />
       </div>
       {/* Right */}
       <div className="flex items-center text-gray-500 justify-end space-x-4">
@@ -100,7 +102,7 @@ function Header({ placeholder }) {
 
             <UsersIcon className="h-5" />
             <input
-              className="w-12 pl-2 text-lg outline-none text-red-400"
+              className="w-12 pl-2 text-lg outline-none text-blue-500"
               type="number"
               value={noOfGuests}
               onChange={(e) => setNoOfGuests(e.target.value)}
@@ -110,7 +112,7 @@ function Header({ placeholder }) {
             <button onClick={resetInput} className="flex-grow text-gray-500">
               Cancel
             </button>
-            <button onClick={search} className="flex-grow text-red-400">
+            <button onClick={search} className="flex-grow text-blue-500">
               Search
             </button>
           </div>

@@ -24,7 +24,7 @@ function InfoCard({ img, location, title, description, star, price, total }) {
 
         <div className="flex items-end justify-between pt-5">
           <p className="flex items-center">
-            <StarIcon className="h-5 text-red-400" />
+            <StarIcon className="h-5 text-blue-500" />
             {star}
           </p>
 
