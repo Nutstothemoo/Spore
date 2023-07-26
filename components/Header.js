@@ -56,14 +56,13 @@ function Header({ placeholder }) {
         onClick={() => router.push("/")}
         className="relative flex items-center h-10 my-auto cursor-pointer"
       >
-        <Image
+        {/* <Image
           src="https://links.papareact.com/qd3"
           layout="fill"
           objectFit="contain"
           objectPosition="left"
-        />
+        /> */}
       </div>
-      {/* Search */}
       <div className="flex items-center md:border-2 rounded-full md:shadow-sm py-2">
         <input
           value={searchInput}
