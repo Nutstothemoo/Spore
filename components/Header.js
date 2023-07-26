@@ -60,7 +60,6 @@ function Header({ placeholder }) {
           src="/logo2.png"
           height={85}
           width={85}
-          // layout="fill"
           objectFit="contain"
           objectPosition="left"
         />
@@ -91,7 +90,7 @@ function Header({ placeholder }) {
         <div className="flex flex-col col-span-3 mx-auto mt-0">
           <DateRangePicker
             minDate={new Date()}
-            rangeColors={["#FD5B61"]}
+            rangeColors={["#3B82F6"]}
             ranges={[selectionRange]}
             onChange={handleSelect}
           />
