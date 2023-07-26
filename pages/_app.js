@@ -16,9 +16,6 @@ Router.events.on("routeChangeStart", progress.start);
 Router.events.on("routeChangeComplete", progress.finish);
 Router.events.on("routeChangeError", progress.finish);
 
-// https://tailwindcss.com/docs/guides/nextjs
-// npx create-next-app -e with-tailwindcss my-project
-
 function MyApp({ Component, pageProps }) {
   return (
     <>
